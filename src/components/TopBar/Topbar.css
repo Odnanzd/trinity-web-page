@@ -1,0 +1,41 @@
+.topbar {
+    position:absolute;
+    top: 0;
+    left: 0; 
+    height: 80px;
+    width: 100%;
+    background-color: #407bff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.topbar .imglogo {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.topbar .menu-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-list .menu-itens-side {
+    cursor: pointer;
+    padding: 20px;
+    font-family: 'VisbyRoundCF-Bold';
+    color: #f0f0f0;
+}
+
+.arrow-icon {
+transition: transform 0.3s ease;
+}
+
+.menu-list .menu-itens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

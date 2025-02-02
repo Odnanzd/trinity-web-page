@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'VisbyRoundCF-Regular';
+    src: url('./VisbyRoundCF-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'VisbyRoundCF-Bold';
+    src: url('./VisbyRoundCF-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'VisbyRoundCF-Light';
+    src: url('./VisbyRoundCF-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
