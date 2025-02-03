@@ -41,7 +41,7 @@ const Faleconosco = () => {
                             Segurança Eletrônica e Monitoramento
                         </div>
                         <div className="sistema-link-solucao">
-                            Sistema ERP para Micro
+                            Sistema ERP para Microempresas
                         </div>
                     </div>
 
