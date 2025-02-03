@@ -42,7 +42,7 @@
 
 .box-informatica .img-box{
     position: absolute;
-    top: 0px;
+    top: 10px;
 }
 
 .box-informatica:hover .img-box{
@@ -111,7 +111,7 @@
 
 .box-seguranca .img-box{
     position: absolute;
-    top: 0px;
+    top: 10px;
 }
 
 .box-seguranca:hover .img-box{
@@ -165,7 +165,7 @@
 
 .box-sistema .img-box{
     position: absolute;
-    top: 0px;
+    top: 10px;
 }
 
 .box-sistema:hover .img-box{

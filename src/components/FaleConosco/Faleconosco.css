@@ -1,0 +1,60 @@
+.faleconosco-box{
+    position: absolute;
+    left: 0;
+    margin-top: 100vh;
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.faleconosco-box .box-itens-faleconosco{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.box-itens-faleconosco .solucao-text, .insti-text, .areacliente-text, .faleconosco-text, .social-text{
+    padding: 30px 0px 30px 0px;
+    color: #407bff;
+    font-family: 'VisbyRoundCF-Bold';
+    font-size: 20px;
+}
+.box-itens-faleconosco .social-text{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+.box-itens-faleconosco .logotrinity{
+    padding-top: 10px;
+}
+
+.box-itens-faleconosco .links-insti, .links-solucao, .links-area, .links-faleconosco{
+    font-family: 'VisbyRoundCF-Regular';
+    font-size: 15px;
+}
+
+.box-itens-faleconosco .info-link-solucao, .sec-link-solucao, .sistema-link-solucao,
+.sobrenos-link, .trabalhe-link, .politica-link, .suporte-link, .endereco-link, .telefone-link, .email-link {
+    padding-bottom: 10px;
+}
+
+.box-itens-faleconosco .endereco-link, .telefone-link, .email-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-trinity {
+    display: flex ;
+    flex-direction: column;
+}
+.social-trinity .itens-logo-rede{
+    display: flex ;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social-trinity .instalogo{
+    padding-right: 20px;
+}

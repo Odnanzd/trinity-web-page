@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Solucoes.css'
-import computerimg from "../../assets/computer-icon.svg"
-import cameraimg from "../../assets/icon-camera.svg"
-import sistemaimg from "../../assets/sistema-icon.svg"
+import computerimg from "../../assets/icon-computer-2.svg"
+import cameraimg from "../../assets/icon-camera-2.svg"
+import sistemaimg from "../../assets/icon-sistema-2.svg"
 
 const Solucoes = () => {
     return (
