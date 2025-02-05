@@ -6,12 +6,14 @@ import Content from "./components/Content/index.jsx"
 import Solucoes from "./components/Solucoes/index.jsx"
 import Faleconosco from './components/FaleConosco/index.jsx'
 import Rodape from './components/Rodape/index.jsx'
+import Contato from './components/Contato/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <TopBar />
     <Content />
     <Solucoes/>
+    <Contato/>
     <Faleconosco/>
     <Rodape/>
   </StrictMode>,

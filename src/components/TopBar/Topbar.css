@@ -23,11 +23,16 @@
     flex-direction: row;
 }
 
+
 .menu-list .menu-itens-side {
     cursor: pointer;
     padding: 20px;
     font-family: 'VisbyRoundCF-Bold';
     color: #f0f0f0;
+}
+
+.menu-list .menu-itens-side:hover{
+    color: #c2c3c4;
 }
 
 .arrow-icon {

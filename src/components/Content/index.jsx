@@ -1,31 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import './Content.css'
 import vectorpeoplework from '../../assets/vector-people-work2.svg'
-
+import vectorpeople from '../../assets/vector-people-work-logo2.svg'
 
 const Content = () => {
     return (
         <div className="menu-content">
             <div className="itens-text">
                 <div className="menu-text-title">
-                    Alcance seus objetivos com nossas soluções em informática, segurança eletrônica e automatização empresarial.
+                    Alcance seus objetivos com nossas soluções em <span class="destaque">informática</span>,
+                     <span class="destaque"> segurança eletrônica</span> e <span class="destaque">automatização empresarial</span>.
                 </div>
                 <div className="menu-text-subtitle">
-                    Na Trinity, nós temos a solução para seus problemas, realizamos manutenção no seu computador pessoal ou da sua empresa,
-                    protegemos o que é mais importante: sua residência e/ou sua empresa e oferecemos o que há de melhor no mercado da automatização comercial.
+                    Na Trinity, oferecemos <span class="destaque"> soluções</span> em manutenção de computadores, segurança para sua residência ou empresa e automação comercial com excelência.
                 </div>
                 <div className="buttons-text">
                     <div className="button-solucao">
-                        Soluções
+                        <a href="#solucao1">Soluções</a>
                     </div>
                     <div className="button-faleconosco">
-                        Fale Conosco
+                    <a href="#contato1">Fale Conosco</a>
                     </div>
                 </div>
             </div>
 
             <div className="menu-img">
-                <img src={vectorpeoplework} />
+                <img src={vectorpeople} />
             </div>
         </div>
     );

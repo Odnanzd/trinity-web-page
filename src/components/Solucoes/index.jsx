@@ -6,27 +6,12 @@ import sistemaimg from "../../assets/icon-sistema-2.svg"
 
 const Solucoes = () => {
     return (
-        <div className="box-itens">
+        <div id="solucao1" className="box-itens">
             <div className="text-solucao">
-                De quais soluções você precisa?
+                De quais <span class="destaque">soluções</span> você precisa?
             </div>
             <div className="itens-solucao">
-                <div className="box-informatica">
-                    <div className="img-box">
-                        <img src={computerimg} />
-                    </div>
-                    <div className="content">
-                        <div className="title-item">
-                            Informática
-                        </div>
-                        <div className="subtitle-item">
-                        Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados, suporte técnico remoto e presencial.
-                        </div>
-                        <a href="#" class="read-more">
-                            Saiba mais
-                        </a>
-                    </div>
-                </div>
+
                 <div className="box-seguranca">
                     <div className="img-box">
                         <img src={cameraimg} />
@@ -36,7 +21,24 @@ const Solucoes = () => {
                             Segurança
                         </div>
                         <div className="subtitle-item">
-                        Câmeras de segurança, alarmes inteligentes, monitoramento remoto via app e controle de acesso seguro.
+                            Câmeras de segurança, alarmes inteligentes, monitoramento remoto via app e controle de acesso seguro.
+                        </div>
+                        <a href="#" class="read-more">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+
+                <div className="box-informatica">
+                    <div className="img-box">
+                        <img src={computerimg} />
+                    </div>
+                    <div className="content">
+                        <div className="title-item">
+                            Informática
+                        </div>
+                        <div className="subtitle-item">
+                            Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados, suporte técnico remoto e presencial.
                         </div>
                         <a href="#" class="read-more">
                             Saiba mais
@@ -52,7 +54,7 @@ const Solucoes = () => {
                             Sistemas ERP
                         </div>
                         <div className="subtitle-item">
-                        Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos para decisões assertivas.
+                            Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos para decisões assertivas.
                         </div>
                         <a href="#" class="read-more">
                             Saiba mais

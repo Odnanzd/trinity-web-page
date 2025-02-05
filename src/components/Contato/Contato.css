@@ -1,0 +1,84 @@
+.box-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.box-contato .itens-contato-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.itens-contato-box .contato-text {
+    display: flex;
+    height: auto;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0px 116px 0px 0px;
+}
+
+.contato-text .text-title {
+    font-family: 'VisbyRoundCF-Bold';
+    font-size: 40px;
+}
+
+.text-title .destaque{
+    color: #407bff;
+}
+
+.contato-text .text-subtitle {
+    font-family: 'VisbyRoundCF-Light';
+    font-size: 18px;
+}
+
+.itens-contato-box .contato-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 9px;
+    background-color: #2957FF1F;
+    margin: 40px 40px 40px 40px;
+}
+
+.contato-form .inputsolucao,
+.inputnome,
+.inputemail,
+.inputcpfcpnj,
+.inputtelefone {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.contato-form .inputcpfcpnj input,
+.contato-form .inputnome input,
+.contato-form .inputemail input,
+.contato-form .inputtelefone input,
+.contato-form .inputsolucao select {
+    width: 366px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.container-button .submit-btn {
+    background-color: #407bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 366px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 9px;
+    font-family: 'Poppins';
+    margin: 10px 0px 10px 0px;
+}
