@@ -21,10 +21,14 @@ const Faleconosco = () => {
                         </div>
                         <div className="itens-logo-rede">
                             <div className="instalogo">
-                                <img src={instalogo} />
+                                <a href="https://www.instagram.com/trinitysolucoestecnologicas/" target="_blank" rel="noopener noreferrer">
+                                    <img src={instalogo} />
+                                </a>
                             </div>
                             <div className="facebooklogo">
-                                <img src={facelogo} />
+                                <a href="https://www.facebook.com/trinitysolucoestecnologicas" target="_blank" rel="noopener noreferrer">
+                                    <img src={facelogo} />
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -78,17 +82,24 @@ const Faleconosco = () => {
                     </div>
                     <div className="links-faleconosco">
                         <div className="endereco-link">
-                            <img src={locationicon} />
-                            Av. Calama, 6781 - Aponiã
+                            <a href="http://bit.ly/4gxJzW3" target="_blank" rel="noopener noreferrer">
+                                <img src={locationicon} />
+                                Av. Calama, 6781 - Aponiã
+                            </a>
                         </div>
                         <div className="telefone-link">
-                            <img src={telefoneicon}/>
-                            (69) 9 9964-3974
+                            <a href="tel:069999643974" target="_blank" rel="noopener noreferrer">
+                                <img src={telefoneicon} />
+                                (69) 9 9964-3974
+                            </a>
                         </div>
                         <div className="email-link">
-                            <img src={mailicon} />
-                            contato@trinitytecnologias.com.br
+                            <a href="mailto:contato@trinitytecnologias.com.br" target="_blank" rel="noopener noreferrer">
+                                <img src={mailicon} />
+                                contato@trinitytecnologias.com.br
+                            </a>
                         </div>
+
                     </div>
                 </div>
 

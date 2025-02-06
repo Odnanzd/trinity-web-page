@@ -234,3 +234,18 @@
     border-radius: 8px;
     font-family: 'VisbyRoundCF-Bold';
 }
+
+@media (max-width: 1280px) {
+    .box-informatica, .box-seguranca, .box-sistema {
+        width: calc(350px * 0.80);
+    }
+    .box-informatica .img-box img, .box-seguranca .img-box img, .box-sistema .img-box img{
+        width: calc(100% * 0.80);
+    }
+
+    .box-informatica .img-box, .box-seguranca .img-box, .box-sistema .img-box{
+        display: flex;
+        justify-content: center;
+    }
+
+}

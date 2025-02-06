@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Rodape.css'
 import logotrinity from "../../assets/logo_trinity_topbar.svg"
+import whatsapplogo from "../../assets/whatsapp-icon.svg"
+
 
 const Rodape = () => {
     return (

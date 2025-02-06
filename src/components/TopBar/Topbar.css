@@ -17,26 +17,47 @@
     cursor: pointer;
 }
 
-.topbar .menu-list{
-    list-style-type: none;
+.topbar nav ul{
     display: flex;
-    flex-direction: row;
+    list-style-type: none;
 }
 
-
-.menu-list .menu-itens-side {
+.topbar nav ul li a {
     cursor: pointer;
-    padding: 20px;
-    font-family: 'VisbyRoundCF-Bold';
+    height: 80px;
+    font-family: "Sora", serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
     color: #f0f0f0;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
 }
 
-.menu-list .menu-itens-side:hover{
-    color: #c2c3c4;
+.topbar nav ul li a:hover{
+    background-color: #c2c3c4;
+    color: #407bff;
 }
 
-.arrow-icon {
-transition: transform 0.3s ease;
+.drop-hover-nov, .drop-hover-cliente{
+    position: relative;
+}
+
+.drop-hover-nov .drop, .drop-hover-cliente .drop{
+    position: absolute;
+    background-color: #c2c3c4;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.drop-hover-nov:hover .drop, .drop-hover-cliente:hover .drop{
+    height: 160px;
+    background-color: #407bff;
 }
 
 .menu-list .menu-itens{

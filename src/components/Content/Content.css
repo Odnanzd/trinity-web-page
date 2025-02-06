@@ -61,12 +61,8 @@
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0px 9px 5px rgba(0,0,0,0.1);
-}
-
-.button-solucao a, .button-faleconosco a{
     text-decoration: none;
-    color: inherit;
+    box-shadow: 0px 9px 5px rgba(0,0,0,0.1);
 }
 
 .button-solucao:hover, .button-faleconosco:hover{
@@ -87,6 +83,7 @@
     border-radius: 15px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-decoration: none;
     box-shadow: 0px 9px 5px rgba(0,0,0,0.1);
 }
 
@@ -100,4 +97,8 @@
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+@media (max-width: 1280px) {
+    
 }

@@ -10,7 +10,7 @@ const Contato = () => {
                         Quer mais <span class="destaque">informações</span> sobre nossos serviços?
                     </div>
                     <div className="text-subtitle">
-                        Marque uma conversa agora com nossos especialistas.
+                        Marque uma conversa agora com nossos técnicos.
                     </div>
                 </div>
                 <div className="contato-form">
@@ -28,17 +28,17 @@ const Contato = () => {
                     </div>
                     <div className="inputnome">
                         <a>Nome completo</a>
-                        <input type="text" name="nome" placeholder="Nome Completo" />
+                        <input type="text" name="nome" placeholder="Ex.: João da Silva" />
                     </div>
                     <div className="inputemail">
                         <a>Email</a>
                         <input type="email"
                             name="email"
-                            placeholder="E-mail" />
+                            placeholder="seunome@email.com" />
                     </div>
                     <div className="inputtelefone">
                         <a>Celular</a>
-                        <input type="text" name="telefone" placeholder="Nome Completo" />
+                        <input type="text" name="telefone" placeholder="69 9 9999-9999" />
                     </div>
                     <div className="inputcpfcpnj">
                         <a>CPF ou CPNJ</a>

@@ -7,6 +7,7 @@ import Solucoes from "./components/Solucoes/index.jsx"
 import Faleconosco from './components/FaleConosco/index.jsx'
 import Rodape from './components/Rodape/index.jsx'
 import Contato from './components/Contato/index.jsx'
+import PopUpWhatsapp from './components/PopupWhatsapp/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,5 +17,6 @@ createRoot(document.getElementById('root')).render(
     <Contato/>
     <Faleconosco/>
     <Rodape/>
+    <PopUpWhatsapp/>
   </StrictMode>,
 )

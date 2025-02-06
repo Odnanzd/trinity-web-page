@@ -9,18 +9,16 @@ const Content = () => {
             <div className="itens-text">
                 <div className="menu-text-title">
                     Alcance seus objetivos com nossas soluções em <span class="destaque">informática</span>,
-                     <span class="destaque"> segurança eletrônica</span> e <span class="destaque">automatização empresarial</span>.
+                    <span class="destaque"> segurança eletrônica</span> e <span class="destaque">automatização empresarial</span>.
                 </div>
                 <div className="menu-text-subtitle">
                     Na Trinity, oferecemos <span class="destaque"> soluções</span> em manutenção de computadores, segurança para sua residência ou empresa e automação comercial com excelência.
                 </div>
                 <div className="buttons-text">
-                    <div className="button-solucao">
-                        <a href="#solucao1">Soluções</a>
-                    </div>
-                    <div className="button-faleconosco">
-                    <a href="#contato1">Fale Conosco</a>
-                    </div>
+
+                    <a href="#solucao1" className="button-solucao">Soluções</a>
+                    <a href="#contato1" className="button-faleconosco">Fale Conosco</a>
+    
                 </div>
             </div>
 
