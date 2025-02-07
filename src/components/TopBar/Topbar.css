@@ -65,3 +65,18 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 760px) {
+    .topbar{
+        height: 60px;
+    }
+
+    .topbar nav ul li a{
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .topbar .imglogo img{
+        scale: 0.7;
+    }
+}

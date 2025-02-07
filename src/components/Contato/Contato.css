@@ -25,7 +25,7 @@
     font-size: 40px;
 }
 
-.text-title .destaque{
+.text-title .destaque {
     color: #407bff;
 }
 
@@ -36,13 +36,16 @@
 }
 
 .itens-contato-box .contato-form {
+    margin: 20px 0px 20px 0px;
+}
+
+.contato-form .form {
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 9px;
     background-color: #2957FF1F;
-    margin: 40px 40px 40px 40px;
-    padding:20px 0px 20px 0px;
+    padding: 10px 10px 10px 10px;
 }
 
 .contato-form .inputsolucao,
@@ -56,10 +59,11 @@
     font-family: 'Poppins';
     font-size: 13px;
     font-weight: 400;
-    a{
+
+    a {
         padding-left: 5px;
     }
-    
+
 }
 
 .contato-form .inputcpfcpnj input,
@@ -87,4 +91,44 @@
     border-radius: 9px;
     font-family: 'Poppins';
     margin: 10px 0px 10px 0px;
+}
+
+@media (max-width: 1120px) {
+    .itens-contato-box .contato-text {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 920px) {
+    .contato-text .text-title {
+        font-size: 30px;
+    }
+
+    .itens-contato-box .contato-text{
+        width: calc(500px * 0.70);
+        padding-right: 20px;
+    }
+
+    .contato-form .inputcpfcpnj input,
+    .contato-form .inputnome input,
+    .contato-form .inputemail input,
+    .contato-form .inputtelefone input,
+    .contato-form .inputsolucao select {
+        width: calc(366px * 0.80);
+    }
+
+    .container-button .submit-btn {
+        width: calc(366px * 0.80);
+    }
+}
+
+@media (max-width: 720px) {
+    .itens-contato-box .contato-text{
+        width: calc(500px * 0.60);
+        padding-right: 20px;
+    }
+
+    .contato-text .text-subtitle{
+        font-size: 15px;
+    }
 }

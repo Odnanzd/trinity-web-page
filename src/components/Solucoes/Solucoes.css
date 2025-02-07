@@ -81,6 +81,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
+    height: 38px;
     color: #407bff;
 }
 
@@ -236,16 +237,108 @@
 }
 
 @media (max-width: 1280px) {
-    .box-informatica, .box-seguranca, .box-sistema {
+
+    .box-informatica,
+    .box-seguranca,
+    .box-sistema {
         width: calc(350px * 0.80);
     }
-    .box-informatica .img-box img, .box-seguranca .img-box img, .box-sistema .img-box img{
+
+    .box-informatica .img-box img,
+    .box-seguranca .img-box img,
+    .box-sistema .img-box img {
         width: calc(100% * 0.80);
     }
 
-    .box-informatica .img-box, .box-seguranca .img-box, .box-sistema .img-box{
+    .box-informatica .img-box,
+    .box-seguranca .img-box,
+    .box-sistema .img-box {
         display: flex;
         justify-content: center;
+    }
+
+    .box-sistema:hover .img-box,
+    .box-informatica:hover .img-box,
+    .box-seguranca:hover .img-box {
+        top: -60px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    .box-informatica,
+    .box-seguranca,
+    .box-sistema {
+        width: calc(350px * 0.70);
+    }
+
+    .box-informatica .img-box img,
+    .box-seguranca .img-box img,
+    .box-sistema .img-box img {
+        width: calc(100% * 0.80);
+    }
+
+    .text-solucao {
+        padding: 40px;
+    }
+
+    .box-itens {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .text-solucao {
+        padding: 20px;
+        font-size: 28px;
+    }
+
+    .box-informatica,
+    .box-seguranca,
+    .box-sistema {
+        width: calc(350px * 0.60);
+        height: calc(300px * 0.70);
+    }
+
+    .box-informatica .img-box img,
+    .box-seguranca .img-box img,
+    .box-sistema .img-box img {
+        width: calc(100% * 0.70);
+    }
+
+    .box-sistema .content,
+    .box-informatica .content,
+    .box-seguranca .content {
+        top: 160px;
+    }
+
+    .content .subtitle-item {
+        font-size: 13px;
+        padding-top: 10px;
+    }
+
+    .content .title-item {
+        font-size: 25px;
+    }
+
+    .box-sistema:hover .content, .box-seguranca:hover .content, .box-informatica:hover .content {
+        top: 80px;
+        height: 250px;
+    }
+
+    .box-sistema:hover .content .subtitle-item,
+    .box-seguranca:hover .content .subtitle-item,
+    .box-informatica:hover .content .subtitle-item {
+        padding: 0;
+    }
+
+    .box-sistema:hover, .box-seguranca:hover, .box-informatica:hover {
+        height: 350px;
+    }
+
+    .box-sistema .read-more, .box-seguranca .read-more, .box-informatica .read-more {
+        width: 150px;
     }
 
 }

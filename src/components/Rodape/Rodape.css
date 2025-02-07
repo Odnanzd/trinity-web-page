@@ -1,6 +1,5 @@
 .rodape-box {
     background-color: #407bff;
-    ;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -12,4 +11,15 @@
 .direitos-text {
     font-family: 'VisbyRoundCF-Regular';
     color: white;
+}
+
+@media (max-width: 840px) {
+    .rodape-box .madefor-trinity-text,
+    .direitos-text{
+        font-size: 13px;
+    }
+
+    .rodape-box .logo-trinity-rodape img{
+        width: calc(202px * 0.70);
+    }
 }
