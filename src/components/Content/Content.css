@@ -39,7 +39,7 @@
     color: rgb(58, 56, 56);
 }
 
-.menu-text-subtitle .destaque{
+.menu-text-subtitle .destaque {
     font-weight: 600;
 }
 
@@ -64,10 +64,11 @@
     font-size: 20px;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0px 9px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.1);
 }
 
-.button-solucao:hover, .button-faleconosco:hover{
+.button-solucao:hover,
+.button-faleconosco:hover {
     background-color: #3772b6;
 }
 
@@ -86,7 +87,7 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     text-decoration: none;
-    box-shadow: 0px 9px 5px rgba(0,0,0,0.1);
+    box-shadow: 0px 9px 5px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes slideIn {
@@ -102,10 +103,39 @@
 }
 
 @media (max-width: 1121px) {
-    .menu-content{
+    .menu-content {
         margin-top: 10vh;
         margin-bottom: 10vh;
         flex-direction: column-reverse;
     }
+
+    .buttons-text {
+        flex-direction: column;
+    }
+
+    .button-faleconosco,
+    .button-solucao {
+        margin: 10px;
+    }
+
+    .menu-text-title {
+        padding: 20px;
+    }
+
+    .menu-text-subtitle {
+        padding: 20px;
+    }
+
 }
 
+@media (max-width: 510px) {
+    .menu-content .menu-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .menu-content .menu-img {
+        margin-top: 20px;
+    }
+}

@@ -8,6 +8,7 @@
 .box-contato .itens-contato-box {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .itens-contato-box .contato-text {
@@ -17,7 +18,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin: 0px 116px 0px 0px;
 }
 
 .contato-text .text-title {
@@ -42,6 +42,7 @@
 .contato-form .form {
     display: flex;
     align-items: center;
+    max-width: 407px;
     flex-direction: column;
     border-radius: 9px;
     background-color: #2957FF1F;
@@ -94,19 +95,16 @@
 }
 
 @media (max-width: 1120px) {
-    .itens-contato-box .contato-text {
-        margin: 0px 0px 0px 0px;
+    .box-contato .itens-contato-box {
+        flex-direction: column;
+        margin: 20px 0px 20px 0;
     }
 }
 
-@media (max-width: 920px) {
-    .contato-text .text-title {
-        font-size: 30px;
-    }
-
-    .itens-contato-box .contato-text{
-        width: calc(500px * 0.70);
-        padding-right: 20px;
+@media (max-width: 524px) {
+    .itens-contato-box .contato-text {
+        width: auto;
+        padding: 10px;
     }
 
     .contato-form .inputcpfcpnj input,
@@ -114,21 +112,12 @@
     .contato-form .inputemail input,
     .contato-form .inputtelefone input,
     .contato-form .inputsolucao select {
-        width: calc(366px * 0.80);
+        width: 80vw;
     }
 
     .container-button .submit-btn {
-        width: calc(366px * 0.80);
-    }
-}
-
-@media (max-width: 720px) {
-    .itens-contato-box .contato-text{
-        width: calc(500px * 0.60);
-        padding-right: 20px;
+        width: 80vw;
     }
 
-    .contato-text .text-subtitle{
-        font-size: 15px;
-    }
+
 }

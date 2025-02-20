@@ -7,8 +7,8 @@
 
 .faleconosco-box .box-itens-faleconosco{
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-    justify-content: space-between; /* Distribui os elementos uniformemente */
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
     padding-left: 5px;
 }

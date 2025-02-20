@@ -322,7 +322,9 @@
         font-size: 25px;
     }
 
-    .box-sistema:hover .content, .box-seguranca:hover .content, .box-informatica:hover .content {
+    .box-sistema:hover .content,
+    .box-seguranca:hover .content,
+    .box-informatica:hover .content {
         top: 80px;
         height: 250px;
     }
@@ -333,12 +335,97 @@
         padding: 0;
     }
 
-    .box-sistema:hover, .box-seguranca:hover, .box-informatica:hover {
+    .box-sistema:hover,
+    .box-seguranca:hover,
+    .box-informatica:hover {
         height: 350px;
     }
 
-    .box-sistema .read-more, .box-seguranca .read-more, .box-informatica .read-more {
+    .box-sistema .read-more,
+    .box-seguranca .read-more,
+    .box-informatica .read-more {
         width: 150px;
     }
 
+}
+
+@media (max-width: 654px) {
+
+    .box-itens{
+        padding: 0;
+    }
+    .itens-solucao {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .box-informatica,
+    .box-seguranca,
+    .box-sistema {
+        width: 90%;
+        height: 210px;
+        justify-content: left;
+        transition: none;
+        margin-bottom: 20px;
+    }
+    
+    .box-informatica:hover,
+    .box-seguranca:hover,
+    .box-sistema:hover {
+        height: 210px;
+    }
+
+    .box-informatica .img-box,
+    .box-seguranca .img-box,
+    .box-sistema .img-box {
+        position: relative;
+        top: inherit;
+        scale: 0.75;
+    }
+
+    .box-informatica:hover .img-box,
+    .box-seguranca:hover .img-box,
+    .box-sistema:hover .img-box {
+        top: inherit;
+        transition: none;
+    }
+
+    .box-informatica .img-box img,
+    .box-seguranca .img-box img,
+    .box-sistema .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: inherit;
+    }
+
+    .box-informatica .content,
+    .box-seguranca .content,
+    .box-sistema .content {
+        gap: inherit;
+        position: inherit;
+        top: inherit;
+        width: inherit;
+        padding: inherit;
+        height: inherit;
+        overflow: inherit;
+        transition: none;
+        justify-content: center;
+    }
+
+    .box-informatica:hover .content,
+    .box-seguranca:hover .content,
+    .box-sistema:hover .content {
+        top: inherit;
+        height: inherit;
+    }
+
+    .content .subtitle-item{
+        padding-top: 0;
+        padding-bottom: 5px;
+        text-align: left;
+    }
+
+    .box-informatica .read-more{
+        top: 0;
+    }
 }

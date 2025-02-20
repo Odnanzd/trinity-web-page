@@ -38,7 +38,7 @@ const Solucoes = () => {
                             Informática
                         </div>
                         <div className="subtitle-item">
-                            Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados, suporte técnico remoto e presencial.
+                            Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados.
                         </div>
                         <a href="#" class="read-more">
                             Saiba mais
@@ -54,7 +54,7 @@ const Solucoes = () => {
                             Sistemas ERP
                         </div>
                         <div className="subtitle-item">
-                            Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos para decisões assertivas.
+                            Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos.
                         </div>
                         <a href="#" class="read-more">
                             Saiba mais
