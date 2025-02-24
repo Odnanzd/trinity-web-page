@@ -31,7 +31,9 @@
 
 .contato-text .text-subtitle {
     padding-top: 10px;
-    font-family: 'VisbyRoundCF-Light';
+    font-family: 'Poppins';
+    color: #53535A;
+    font-weight: 400;
     font-size: 18px;
 }
 

@@ -3,6 +3,7 @@ import './Solucoes.css'
 import computerimg from "../../assets/icon-computer-2.svg"
 import cameraimg from "../../assets/icon-camera-2.svg"
 import sistemaimg from "../../assets/icon-sistema-2.svg"
+import shieldimg from "../../assets/icon_shield.svg"
 
 const Solucoes = () => {
     return (
@@ -14,7 +15,7 @@ const Solucoes = () => {
 
                 <div className="box-seguranca">
                     <div className="img-box">
-                        <img src={cameraimg} />
+                        <img src={shieldimg} />
                     </div>
                     <div className="content">
                         <div className="title-item">

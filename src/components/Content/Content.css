@@ -30,13 +30,13 @@
 }
 
 .menu-text-subtitle {
-    font-family: "Sora", serif;
+    font-family: 'Poppins';
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
     text-align: left;
     padding: 40px 40px 40px 40px;
-    color: rgb(58, 56, 56);
+    color: #53535A
 }
 
 .menu-text-subtitle .destaque {
