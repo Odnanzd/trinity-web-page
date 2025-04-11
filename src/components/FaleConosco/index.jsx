@@ -39,13 +39,19 @@ const Faleconosco = () => {
                     </div>
                     <div className="links-solucao">
                         <div className="info-link-solucao">
-                            Informática
+                            <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer">
+                                Informática
+                            </a>
                         </div>
                         <div className="sec-link-solucao">
-                            Segurança Eletrônica e Monitoramento
+                            <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer">
+                                Segurança Eletrônica e Monitoramento
+                            </a>
                         </div>
                         <div className="sistema-link-solucao">
-                            Sistema ERP para Microempresas
+                            <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer">
+                                Sistema ERP para Microempresas
+                            </a>
                         </div>
                     </div>
 
@@ -56,10 +62,12 @@ const Faleconosco = () => {
                     </div>
                     <div className="links-insti">
                         <div className="sobrenos-link">
-                            Sobre nós
+                            <a href="#sobrenos1">
+                                Sobre nós
+                            </a>
                         </div>
                         <div className="trabalhe-link">
-                            Trabalhe Conosco
+                            Termos e Condições
                         </div>
                         <div className="politica-link">
                             Política de Privacidade

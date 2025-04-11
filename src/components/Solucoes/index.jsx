@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Solucoes.css'
 import computerimg from "../../assets/icon-computer-2.svg"
-import cameraimg from "../../assets/icon-camera-2.svg"
 import sistemaimg from "../../assets/icon-sistema-2.svg"
 import shieldimg from "../../assets/icon_shield.svg"
 
@@ -24,7 +23,7 @@ const Solucoes = () => {
                         <div className="subtitle-item">
                             Câmeras de segurança, alarmes inteligentes, monitoramento remoto via app e controle de acesso seguro.
                         </div>
-                        <a href="#" class="read-more">
+                        <a href="https://wa.me/556999643974" target="blank" rel="noopener noreferrer" class="read-more">
                             Saiba mais
                         </a>
                     </div>
@@ -41,7 +40,7 @@ const Solucoes = () => {
                         <div className="subtitle-item">
                             Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados.
                         </div>
-                        <a href="#" class="read-more">
+                        <a href="https://wa.me/556999643974" target="blank" rel="noopener noreferrer" class="read-more">
                             Saiba mais
                         </a>
                     </div>
@@ -57,7 +56,7 @@ const Solucoes = () => {
                         <div className="subtitle-item">
                             Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos.
                         </div>
-                        <a href="#" class="read-more">
+                        <a href="https://wa.me/556999643974" target="blank" rel="noopener noreferrer" class="read-more">
                             Saiba mais
                         </a>
                     </div>

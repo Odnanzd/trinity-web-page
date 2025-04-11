@@ -1,14 +1,15 @@
 .box-contato {
     display: flex;
-    align-items: center;
+    background-color: #ffffff;
     justify-content: center;
-    background-color: #f0f0f0;
+    padding-bottom: 20px;
 }
 
 .box-contato .itens-contato-box {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .itens-contato-box .contato-text {
@@ -18,27 +19,35 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-left: 20px;
 }
 
 .contato-text .text-title {
-    font-family: 'VisbyRoundCF-Bold';
+    font-family: "Sora", serif;
+    font-weight: 400;
     font-size: 40px;
+    color: #000000;
 }
 
 .text-title .destaque {
     color: #407bff;
+    font-weight: 600;
 }
 
-.contato-text .text-subtitle {
+.destaque2{
+    color: red;
+}
+
+.contato-text .text-subtitle{
     padding-top: 10px;
     font-family: 'Poppins';
-    color: #53535A;
+    color: #797979;
     font-weight: 400;
     font-size: 18px;
 }
 
 .itens-contato-box .contato-form {
-    margin: 20px 0px 20px 0px;
+    margin: 20px 20px 20px 20px;
 }
 
 .contato-form .form {
@@ -47,15 +56,15 @@
     max-width: 407px;
     flex-direction: column;
     border-radius: 9px;
-    background-color: #2957FF1F;
-    padding: 10px 10px 10px 10px;
+    background-color: #ffffff;
+    box-shadow: rgba(128, 128, 128, 0.14) 0px 0px 20px;  
 }
 
 .contato-form .inputsolucao,
 .inputnome,
 .inputemail,
 .inputcpfcpnj,
-.inputtelefone {
+.inputtelefone, .inputmensagem {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 10px 10px;
@@ -73,7 +82,9 @@
 .contato-form .inputnome input,
 .contato-form .inputemail input,
 .contato-form .inputtelefone input,
-.contato-form .inputsolucao select {
+.contato-form .inputsolucao select,
+.contato-form .inputmensagem textarea
+ {
     width: 366px;
     height: 40px;
     border-radius: 6px;
@@ -81,8 +92,14 @@
     outline: none;
     box-sizing: border-box;
     padding: 8px;
+    font-family: 'Poppins';
+    background-color: #f0f0f0;
 }
 
+.contato-form .inputmensagem textarea{
+    height: auto;
+    resize: none;
+}
 .container-button .submit-btn {
     background-color: #407bff;
     color: white;
@@ -96,10 +113,58 @@
     margin: 10px 0px 10px 0px;
 }
 
+.form .form-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #aef8ab;
+    width: 100%;
+    border-radius: 7px;
+    height: 50px;
+    gap: 10px;
+}
+
+.form-success a {
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+    0% {
+        transform: rotate(0turn);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
 @media (max-width: 1120px) {
+
+    .box-contato{
+        justify-content: center;
+        padding: 0px 10px 0px 10px;
+    }
+
     .box-contato .itens-contato-box {
         flex-direction: column;
         margin: 20px 0px 20px 0;
+
+
     }
 }
 
@@ -113,7 +178,9 @@
     .contato-form .inputnome input,
     .contato-form .inputemail input,
     .contato-form .inputtelefone input,
-    .contato-form .inputsolucao select {
+    .contato-form .inputsolucao select,
+    .contato-form .inputmensagem textarea
+    {
         width: 80vw;
     }
 

@@ -23,11 +23,13 @@ const Topbar = () => {
                         <img src={iconsetadown} />
                     </a>
                         <div className="drop">
-                            <a href="#">Inauguração</a>
-                            <a href="#">Promoções</a>
+                        <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
+                                Inauguração
+                            </a>
                         </div>
                     </li>
-                    <li className="trinitybutton"><a href="#">A Trinity</a></li>
+                    <li className="trinitybutton"><a href="#sobrenos1">A Trinity</a></li>
+                    <li className="contatobutton"><a href="#contato1">Contato</a></li>
                     <li className="drop-hover-cliente"><a>Área do Cliente
                         <img src={iconsetadown} />
                     </a>
@@ -52,8 +54,25 @@ const Topbar = () => {
                             <img src={iconclose} alt="" />
                         </a>
                     </li>
-                    <li><a href="#">Soluções</a></li>
-                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#solucao1">Soluções</a></li>
+                    <li className="drop-hover-nov-mobile"><a>Novidades
+                        <img src={iconsetadown} />
+                    </a>
+                        <div className="drop-mobile">
+                        <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
+                                Inauguração
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="#sobrenos1">A Trinity</a></li>
+                    <li><a href="#contato1">Contato</a></li>
+                    <li className="drop-hover-cliente-mobile"><a>Área do Cliente
+                        <img src={iconsetadown} />
+                    </a>
+                        <div className="drop-mobile">
+                            <a href="#">Suporte</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
 

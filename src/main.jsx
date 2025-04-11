@@ -8,15 +8,19 @@ import Faleconosco from './components/FaleConosco/index.jsx'
 import Rodape from './components/Rodape/index.jsx'
 import Contato from './components/Contato/index.jsx'
 import PopUpWhatsapp from './components/PopupWhatsapp/index.jsx'
+import PopUpCookie from './components/PopUpCookie/index.jsx'
+import SobreNos from './components/SobreNos/index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <PopUpCookie />
     <TopBar />
     <Content />
-    <Solucoes/>
-    <Contato/>
-    <Faleconosco/>
-    <Rodape/>
-    <PopUpWhatsapp/>
+    <Solucoes />
+    <SobreNos />
+    <Contato />
+    <Faleconosco />
+    <Rodape />
+    <PopUpWhatsapp />
   </StrictMode>,
 )

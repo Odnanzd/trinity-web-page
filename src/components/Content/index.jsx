@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Content.css'
-import vectorpeoplework from '../../assets/vector-people-work2.svg'
 import vectorpeople from '../../assets/vector-people-work-logo2.svg'
 
 const Content = () => {
@@ -18,7 +17,6 @@ const Content = () => {
 
                     <a href="#solucao1" className="button-solucao">Soluções</a>
                     <a href="#contato1" className="button-faleconosco">Fale Conosco</a>
-    
                 </div>
             </div>
 
