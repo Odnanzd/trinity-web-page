@@ -2,7 +2,7 @@
     display: flex;
     background-color: #ffffff;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 50px 0px 50px 0px;
 }
 
 .box-contato .itens-contato-box {
@@ -88,12 +88,17 @@
     width: 366px;
     height: 40px;
     border-radius: 6px;
-    border: none;
     outline: none;
     box-sizing: border-box;
     padding: 8px;
     font-family: 'Poppins';
     background-color: #f0f0f0;
+    border: 1px solid rgb(218, 218, 218);
+}
+.inputcpfcpnj input:focus, .inputnome input:focus,
+ .inputemail input:focus, .inputtelefone input:focus,
+.inputsolucao select:focus, .inputmensagem textarea:focus   {
+    border-color: #407bff;
 }
 
 .contato-form .inputmensagem textarea{

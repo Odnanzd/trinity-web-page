@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React, useState } from 'react';
 import './Contato.css'
 import iconsucess from '../../assets/success-icon-32px.svg'
 import InputMask from 'react-input-mask';
@@ -8,6 +8,36 @@ const Contato = () => {
     const [formEnviado, setFormEnviado] = useState(false);
     const [loading, setLoading] = useState(false);
 
+    const [contatoForm, setcontatoForm] = useState({
+        tipo_form: '',
+        nome: '',
+        email: '',
+        telefone: '',
+        cpf: '',
+        mensagem: ''
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setcontatoForm((contatoForm) => {
+            return {
+                ...contatoForm,
+                [name]: value
+            };
+        });
+    }
+
+    const clearForm = () => {
+        setcontatoForm({
+            tipo_form: '',
+            nome: '',
+            email: '',
+            telefone: '',
+            cpf: '',
+            mensagem: ''
+        })
+    }
+
     const onSubmitNewForm = async (e) => {
         e.preventDefault();
 
@@ -15,7 +45,7 @@ const Contato = () => {
 
         setLoading(true);
         try {
-            const response = await fetch("https://formsubmit.co/81df2ac1d729df72cab0fb84f9240277", {
+            const response = await fetch("https://formsubmit.co/f22a20bbfafcbdd42d55055789058ea4", {
                 method: "POST",
                 body: formData,
             });
@@ -23,6 +53,7 @@ const Contato = () => {
             if (response.ok) {
                 setFormEnviado(true);
                 setLoading(false);
+                clearForm();
             } else {
                 console.error("Erro ao enviar o formulário.");
             }
@@ -51,7 +82,11 @@ const Contato = () => {
                     <form onSubmit={onSubmitNewForm} className="form">
                         <div className="inputsolucao">
                             <label>Selecione uma opção <span className="destaque2">*</span></label>
-                            <select name="tipo_form" required>
+                            <select name="tipo_form"
+                                required
+                                onChange={handleInputChange}
+                                value={contatoForm.tipo_form}
+                            >
                                 <option value="">Selecionar</option>
                                 <option value="Informática">Informática</option>
                                 <option value="Segurança">Segurança Eletrônica</option>
@@ -63,7 +98,9 @@ const Contato = () => {
                             <input
                                 type="text"
                                 name="nome"
+                                value={contatoForm.nome}
                                 required
+                                onChange={handleInputChange}
                                 placeholder="Digite seu nome" />
                         </div>
                         <div className="inputemail">
@@ -71,7 +108,9 @@ const Contato = () => {
                             <input
                                 type="email"
                                 name="email"
+                                value={contatoForm.email}
                                 required
+                                onChange={handleInputChange}
                                 placeholder="Digite seu e-mail" />
                         </div>
                         <div className="inputtelefone">
@@ -80,7 +119,9 @@ const Contato = () => {
                                 mask="(99) 9 9999-9999"
                                 type="text"
                                 name="telefone"
+                                value={contatoForm.telefone}
                                 required
+                                onChange={handleInputChange}
                                 placeholder="Digite seu telefone" />
                         </div>
                         <div className="inputcpfcpnj">
@@ -88,20 +129,22 @@ const Contato = () => {
                             <input
                                 type="text"
                                 name="cpf"
+                                value={contatoForm.cpf}
                                 required
+                                onChange={handleInputChange}
                                 placeholder="Digite seu CPF ou CPNJ" />
                         </div>
                         <div className="inputmensagem">
                             <label>Mensagem</label>
                             <textarea
                                 name="mensagem"
+                                value={contatoForm.mensagem}
                                 placeholder="Digite sua mensagem (opcional)"
+                                onChange={handleInputChange}
                                 rows="5"
                             ></textarea>
                         </div>
                         <input type="hidden" name="_captcha" value="false" />
-                        <input type="hidden" name="_cc" value="fernando.trindade.ti@gmail.com" />
-                        <input type="hidden" name="_cc" value="ericlesaraujo77@gmail.com" />
 
                         <div className="container-button">
                             <button type="submit" disabled={loading} className="submit-btn">

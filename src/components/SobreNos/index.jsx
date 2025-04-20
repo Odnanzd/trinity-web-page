@@ -1,6 +1,5 @@
 import './SobreNos.css'
-import { React, useEffect, useState } from 'react';
-import PeopleImage from '../../assets/peoples.png';
+import { React} from 'react';
 import EngrenaIcon from '../../assets/iconengrenage.svg';
 import FoguteIcon from '../../assets/iconfoguete.svg'
 
