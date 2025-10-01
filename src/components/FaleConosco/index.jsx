@@ -89,12 +89,12 @@ const Faleconosco = () => {
                         Fale Conosco
                     </div>
                     <div className="links-faleconosco">
-                        <div className="endereco-link">
+                        {/* <div className="endereco-link">
                             <a href="http://bit.ly/4gxJzW3" target="_blank" rel="noopener noreferrer">
                                 <img src={locationicon} />
                                 Av. Calama, 6781 - Aponiã
                             </a>
-                        </div>
+                        </div> */}
                         <div className="telefone-link">
                             <a href="tel:069999643974" target="_blank" rel="noopener noreferrer">
                                 <img src={telefoneicon} />

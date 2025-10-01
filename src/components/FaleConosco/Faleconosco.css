@@ -15,7 +15,7 @@
 .box-itens-faleconosco .solucao-text, .insti-text, .areacliente-text, .faleconosco-text, .social-text{
     padding: 20px 0px 20px 0px;
     color: #407bff;
-    font-family: 'Poppins';
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
@@ -29,9 +29,9 @@
 }
 
 .box-itens-faleconosco .links-insti, .links-solucao, .links-area, .links-faleconosco{
-    font-family: 'Poppins';
-    color: #2f2f36;
-    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    color: #656566;
+    font-weight: 500;
     font-size: 14px;
 }
 
@@ -44,7 +44,7 @@
  .info-link-solucao a, .sec-link-solucao a, .sistema-link-solucao a, .sobrenos-link a{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     text-decoration: none;
     color: inherit;
 }
