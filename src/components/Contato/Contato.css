@@ -23,8 +23,8 @@
 }
 
 .contato-text .text-title {
-    font-family: "Sora", serif;
-    font-weight: 400;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
     font-size: 40px;
     color: #000000;
 }
@@ -34,16 +34,16 @@
     font-weight: 600;
 }
 
-.destaque2{
+.destaque2 {
     color: red;
 }
 
-.contato-text .text-subtitle{
+.contato-text .text-subtitle {
     padding-top: 10px;
-    font-family: 'Poppins';
+    font-family: "Figtree", sans-serif;
     color: #797979;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .itens-contato-box .contato-form {
@@ -57,20 +57,23 @@
     flex-direction: column;
     border-radius: 9px;
     background-color: #ffffff;
-    box-shadow: rgba(128, 128, 128, 0.14) 0px 0px 20px;  
+    box-shadow: rgba(128, 128, 128, 0.14) 0px 0px 20px;
 }
 
 .contato-form .inputsolucao,
 .inputnome,
 .inputemail,
 .inputcpfcpnj,
-.inputtelefone, .inputmensagem {
+.inputtelefone,
+.inputmensagem {
     display: flex;
     flex-direction: column;
     padding: 10px 10px 10px 10px;
-    font-family: 'Poppins';
-    font-size: 13px;
-    font-weight: 400;
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-indent: 10px;
+    gap: 5px;
 
     a {
         padding-left: 5px;
@@ -83,28 +86,33 @@
 .contato-form .inputemail input,
 .contato-form .inputtelefone input,
 .contato-form .inputsolucao select,
-.contato-form .inputmensagem textarea
- {
+.contato-form .inputmensagem textarea {
     width: 366px;
     height: 40px;
     border-radius: 6px;
     outline: none;
     box-sizing: border-box;
     padding: 8px;
-    font-family: 'Poppins';
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
     background-color: #f0f0f0;
     border: 1px solid rgb(218, 218, 218);
 }
-.inputcpfcpnj input:focus, .inputnome input:focus,
- .inputemail input:focus, .inputtelefone input:focus,
-.inputsolucao select:focus, .inputmensagem textarea:focus   {
+
+.inputcpfcpnj input:focus,
+.inputnome input:focus,
+.inputemail input:focus,
+.inputtelefone input:focus,
+.inputsolucao select:focus,
+.inputmensagem textarea:focus {
     border-color: #407bff;
 }
 
-.contato-form .inputmensagem textarea{
+.contato-form .inputmensagem textarea {
     height: auto;
     resize: none;
 }
+
 .container-button .submit-btn {
     background-color: #407bff;
     color: white;
@@ -133,11 +141,13 @@
     font-family: 'Poppins';
     font-size: 15px;
 }
-.submit-btn{
+
+.submit-btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .spinner {
     pointer-events: none;
     width: 30px;
@@ -160,7 +170,7 @@
 
 @media (max-width: 1120px) {
 
-    .box-contato{
+    .box-contato {
         justify-content: center;
         padding: 0px 10px 0px 10px;
     }
@@ -184,8 +194,7 @@
     .contato-form .inputemail input,
     .contato-form .inputtelefone input,
     .contato-form .inputsolucao select,
-    .contato-form .inputmensagem textarea
-    {
+    .contato-form .inputmensagem textarea {
         width: 80vw;
     }
 

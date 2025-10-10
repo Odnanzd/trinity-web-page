@@ -1,6 +1,7 @@
 .menu-content {
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+    height: 100vh;
+    /* margin-top: 25vh;
+    margin-bottom: 25vh; */
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
@@ -30,17 +31,18 @@
 }
 
 .menu-text-subtitle {
-    font-family: 'Poppins';
-    font-weight: 400;
+    font-family: "Figtree", sans-serif;
+    color: #6b6f7d;
+    font-weight: 600;
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     padding: 40px 40px 40px 40px;
-    color: #53535A
+    /* color: #7d7d7d */
 }
 
 .menu-text-subtitle .destaque {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .buttons-text {
@@ -56,9 +58,9 @@
     justify-content: center;
     width: 230px;
     height: 50px;
-    font-family: Inter, sans-serif;
+    font-family: "Figtree", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     color: #f0f0f0;
     background-color: #407bff;
     border: 2px solid #407bff;
@@ -81,9 +83,9 @@
     justify-content: center;
     width: 230px;
     height: 50px;
-    font-family: Inter, sans-serif;
+    font-family: "Figtree", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 16px;
     color: #2577f1;
     background-color: #f0f0f0;
@@ -109,6 +111,7 @@
 
 @media (max-width: 1121px) {
     .menu-content {
+        height: inherit;
         margin-top: 10vh;
         margin-bottom: 10vh;
         flex-direction: column-reverse;

@@ -126,7 +126,8 @@ const Contato = () => {
                         </div>
                         <div className="inputcpfcpnj">
                             <label>CPF ou CNPJ <span className="destaque2">*</span></label>
-                            <input
+                            <InputMask
+                                mask="999.999.999-99"
                                 type="text"
                                 name="cpf"
                                 value={contatoForm.cpf}

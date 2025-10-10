@@ -7,7 +7,7 @@ const Rodape = () => {
     return (
         <div className="rodape-box">
             <div className="madefor-trinity-text">
-                Feito por equipe de desenvolvimento Trinity V.3.1
+                Feito por equipe de desenvolvimento Trinity V.3.5
             </div>
             <div className="direitos-text">
                 2025 © Todos os direitos reservados.

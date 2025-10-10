@@ -1,47 +1,70 @@
-.faleconosco-box{
+.faleconosco-box {
     background-color: #F4F5F7;
     display: flex;
     flex-direction: column;
     padding-bottom: 25px;
 }
 
-.faleconosco-box .box-itens-faleconosco{
+.faleconosco-box .box-itens-faleconosco {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
     padding: 0px 10px 0px 10px;
 }
-.box-itens-faleconosco .solucao-text, .insti-text, .areacliente-text, .faleconosco-text, .social-text{
+
+.box-itens-faleconosco .solucao-text,
+.insti-text,
+.areacliente-text,
+.faleconosco-text,
+.social-text {
     padding: 20px 0px 20px 0px;
     color: #407bff;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
     font-size: 20px;
 }
-.box-itens-faleconosco .social-text{
+
+.box-itens-faleconosco .social-text {
     display: flex;
     justify-content: center;
     padding: 10px 0px 10px 0px;
 }
-.box-itens-faleconosco .logotrinity{
+
+.box-itens-faleconosco .logotrinity {
     padding-top: 20px;
 }
 
-.box-itens-faleconosco .links-insti, .links-solucao, .links-area, .links-faleconosco{
+.box-itens-faleconosco .links-insti,
+.links-solucao,
+.links-area,
+.links-faleconosco {
     font-family: "Inter", sans-serif;
     color: #656566;
     font-weight: 500;
     font-size: 14px;
 }
 
-.box-itens-faleconosco .info-link-solucao, .sec-link-solucao, .sistema-link-solucao,
-.sobrenos-link, .trabalhe-link, .politica-link, .suporte-link, .endereco-link, .telefone-link, .email-link {
+.box-itens-faleconosco .info-link-solucao,
+.sec-link-solucao,
+.sistema-link-solucao,
+.sobrenos-link,
+.trabalhe-link,
+.politica-link,
+.suporte-link,
+.endereco-link,
+.telefone-link,
+.email-link {
     padding-bottom: 10px;
 }
 
-.box-itens-faleconosco .endereco-link a, .telefone-link a, .email-link a,
- .info-link-solucao a, .sec-link-solucao a, .sistema-link-solucao a, .sobrenos-link a{
+.box-itens-faleconosco .endereco-link a,
+.telefone-link a,
+.email-link a,
+.info-link-solucao a,
+.sec-link-solucao a,
+.sistema-link-solucao a,
+.sobrenos-link a {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -49,40 +72,56 @@
     color: inherit;
 }
 
-.box-itens-faleconosco .endereco-link a:hover, .telefone-link a:hover,
- .email-link a:hover, .info-link-solucao a:hover, .sec-link-solucao a:hover, .sistema-link-solucao a:hover, .sobrenos-link a:hover{
-    text-decoration:underline;
-    color:#407bff;
+.box-itens-faleconosco .endereco-link a:hover,
+.telefone-link a:hover,
+.email-link a:hover,
+.info-link-solucao a:hover,
+.sec-link-solucao a:hover,
+.sistema-link-solucao a:hover,
+.sobrenos-link a:hover {
+    text-decoration: underline;
+    color: #407bff;
 }
 
 .social-trinity {
-    display: flex ;
+    display: flex;
     flex-direction: column;
 }
-.social-trinity .itens-logo-rede{
-    display: flex ;
+
+.social-trinity .itens-logo-rede {
+    display: flex;
     justify-content: center;
     flex-direction: row;
 }
 
-.social-trinity .instalogo{
+.social-trinity .instalogo {
     padding-right: 20px;
 }
 
 @media (max-width: 980px) {
-    .box-itens-faleconosco .solucao-text, .insti-text, .areacliente-text, .faleconosco-text, .social-text{
+
+    .box-itens-faleconosco .solucao-text,
+    .insti-text,
+    .areacliente-text,
+    .faleconosco-text,
+    .social-text {
         font-size: 16px;
         padding: 20px 0px 20px 0px;
     }
-    .box-itens-faleconosco .links-insti, .links-solucao, .links-area, .links-faleconosco{
+
+    .box-itens-faleconosco .links-insti,
+    .links-solucao,
+    .links-area,
+    .links-faleconosco {
         font-size: 13px;
     }
 
-    .box-itens-faleconosco .logotrinity img{
+    .box-itens-faleconosco .logotrinity img {
         width: calc(250px * 0.60);
-    
+
     }
-    .faleconosco-box{
+
+    .faleconosco-box {
         flex-wrap: wrap;
     }
 }

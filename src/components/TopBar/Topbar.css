@@ -1,5 +1,5 @@
 .topbar {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0; 
     height: 75px;
@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 6px;
+    z-index: 9999;
 }
 
 .topbar .imgmenu{
@@ -28,11 +29,10 @@
 
 .topbar nav ul li a {
     cursor: pointer;
-    height: 80px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
+    height: 75px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
     font-size: 15px;
-    font-style: normal;
     color: #f0f0f0;
     display: flex;
     text-decoration: none;
@@ -60,7 +60,7 @@
 }
 
 .drop-hover-nov:hover .drop, .drop-hover-cliente:hover .drop{
-    height: 80px;
+    height: 75px;
     background-color: #407bff;
 }
 

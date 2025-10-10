@@ -22,7 +22,8 @@ const Solucoes = () => {
                     <div className="content">
                         <div className="title-item">Segurança</div>
                         <div className="subtitle-item">
-                            Câmeras de segurança, alarmes inteligentes, monitoramento remoto via app e controle de acesso seguro.
+                            Proteja seu patrimônio com sistemas de segurança de ponta. Oferecemos monitoramento por câmeras,
+                             alarmes inteligentes.
                         </div>
                         <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer" className="read-more">
                             Saiba mais
@@ -39,7 +40,7 @@ const Solucoes = () => {
                     <div className="content">
                         <div className="title-item">Informática</div>
                         <div className="subtitle-item">
-                            Manutenção e formatação de computadores, instalação de softwares e sistemas, backup e recuperação de dados.
+                            Garanta a eficiência da sua infraestrutura de TI. Realizamos manutenção de computadores, notebooks, entre outros...
                         </div>
                         <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer" className="read-more">
                             Saiba mais
@@ -56,7 +57,8 @@ const Solucoes = () => {
                     <div className="content">
                         <div className="title-item">Trinity ERP</div>
                         <div className="subtitle-item">
-                            Gestão financeira e fiscal, controle de estoque e vendas, automação de processos administrativos e relatórios estratégicos.
+                           Centralize a gestão da sua empresa e tome decisões mais inteligentes.
+                            Nosso ERP integra financeiro, fiscal, estoque e vendas.
                         </div>
                         <a href="https://wa.me/556999643974" target="_blank" rel="noopener noreferrer" className="read-more">
                             Saiba mais

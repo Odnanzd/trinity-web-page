@@ -1,60 +1,61 @@
 .box-itens {
+    height: 100vh;
     background-color: #407bff;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     border-radius: 9px;
 }
 
 .text-solucao {
-    padding: 80px;
-    font-family: "Sora", serif;
-    font-size: 32px;
+    /* padding: 80px; */
+    font-family: "Figtree", sans-serif;
+    font-size: 36px;
     color: #f0f0f0;
     text-align: center;
 }
 
 .text-solucao .destaque {
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .itens-solucao {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    /* gap: 50px; */
 }
 
 .solucao-box {
     width: 350px;
-    height: 300px;
+    height: 400px;
     position: relative;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    overflow: visible;
-    transition: height 0.4s ease;
-    will-change: transform;
+    overflow: hidden;
     display: flex;
     justify-content: center;
+    /* Otimização: Removida a transição de 'height' */
 }
 
-.solucao-box:hover {
-    height: 400px;
-}
+/* Não precisamos mais de um :hover para o .solucao-box */
 
 .img-box {
     position: absolute;
-    top: 10px;
+    top: 50px;
     transition: transform 0.4s ease;
     will-change: transform;
 }
 
-
 .solucao-box:hover .img-box {
-    transform: translateY(-70px) scale(0.80);
+    transform: translateY(-70px) scale(0.60);
 }
 
 .content {
@@ -63,32 +64,45 @@
     align-items: center;
     gap: 18px;
     position: absolute;
-    top: 220px;
+    top: 270px;
     width: 100%;
     text-align: center;
-    height: 60px;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    will-change: transform;
 }
 
 .solucao-box:hover .content {
-    top: 130px;
-    height: 250px;
+    transform: translateY(-110px);
+    transition: transform 0.4s ease;
 }
 
 .title-item {
-    font-family: "Sora", serif;
+    font-family: "Figtree", sans-serif;
     font-size: 30px;
     color: #407bff;
-    font-weight: 500;
+    font-weight: 600;
 }
+
+.subtitle-item,
+.read-more {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: opacity, transform;
+}
+
+.solucao-box:hover .subtitle-item,
+.solucao-box:hover .read-more {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
+}
+
 
 .subtitle-item {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    font-weight: 500;
     color: #53535A;
-    margin: 5px;
+    margin: 0px 20px 0px 20px;
 }
 
 .read-more {
@@ -108,23 +122,28 @@
 .hidden {
     opacity: 0;
     transform: translateY(50px);
-  }
-  
-  .reveal {
+}
+
+/* .reveal {
     opacity: 1;
     transform: translateY(0px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+} */
 
 @media (max-width: 1120px) {
 
     .solucao-box {
-        width: calc(350px * 0.80);
-        height: calc(300px * 0.80);
+        width: 290px;
+        height: 340px;
     }
 
     .solucao-box .content {
-        top: 180px;
+        top: 220px;
+        gap: 15px;
+    }
+
+    .solucao-box:hover .content {
+        transform: translateY(-120px);
     }
 
     .solucao-box .img-box {
@@ -137,20 +156,23 @@
     }
 
     .solucao-box:hover .img-box {
-        transform: translateY(-40px) scale(0.90);
+        transform: translateY(-80px) scale(0.60);
     }
 }
 
+
 @media (max-width: 900px) {
-
     .box-itens {
-        padding-bottom: 100px;
+        height: inherit;
+        padding-bottom: 30px;
+        gap: 20px;
     }
 
-    .text-solucao{
+    .text-solucao {
         font-size: 28px;
-        padding: 50px 0px 50px 20px;
+        padding-top: 20px;
     }
+
     .itens-solucao {
         flex-direction: column;
         margin: 0;
@@ -158,14 +180,35 @@
 
     .solucao-box {
         width: 90%;
-        height: 210px;
-        justify-content: left;
-        transition: none;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: visible;
         margin-bottom: 20px;
+        padding: 15px;
     }
 
+    .solucao-box:hover {
+        transform: none;
+    }
+    .solucao-box .img-box {
+        position: static;
+        transform: scale(0.85);
+        flex-shrink: 0;
+    }
+
+    .solucao-box:hover .img-box {
+        transform: scale(0.85);
+    }
+
+    .solucao-box .img-box img {
+        width: 100%;
+    }
     .solucao-box .content {
-        gap: inherit;
+        
+        gap: 8px;
         position: inherit;
         top: inherit;
         width: inherit;
@@ -177,49 +220,52 @@
     }
 
     .solucao-box:hover .content {
-        top: inherit;
-        height: inherit;
-    }
-
-    .solucao-box:hover {
-        height: 210px;
-    }
-
-    .solucao-box .img-box {
-        position: relative;
-        top: inherit;
-        transform: scale(0.75);
-    }
-
-    .solucao-box:hover .img-box {
         transform: none;
     }
 
-    .solucao-box .img-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: inherit;
+    .solucao-box .subtitle-item,
+    .solucao-box .read-more {
+        opacity: 1;
+        transform: none;
     }
 }
 
-@media (max-width: 512px) {
 
-    .text-solucao{
+@media (max-width: 512px) {
+    .text-solucao {
         font-size: 27px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px;
+    }
+
+    .solucao-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .solucao-box .content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .solucao-box .img-box {
+        transform: scale(0.8);
+        margin-bottom: 10px;
+    }
+
+    .solucao-box:hover .img-box {
+        transform: scale(0.8);
     }
 
     .title-item {
         font-size: 20px;
     }
-    
+
     .subtitle-item {
         font-size: 14px;
     }
 
     .read-more {
         width: 150px;
+        padding: 10px;
     }
-
-
 }

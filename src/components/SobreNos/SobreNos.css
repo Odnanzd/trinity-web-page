@@ -34,15 +34,15 @@
 }
 
 .container-text-title-sobrenos .text-title-sobrenos{
-    font-family: "Sora", serif;
-    font-weight: 500;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
     font-size: 50px;
     color: #407bff;
 }
 
 .text-title-sobrenos .destaque-somos{
     color: #000000;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .destaque-trinity{
@@ -51,17 +51,17 @@
 }
 
 .texts-sobrenos .text-subtitle-sobrenos{
-    font-family: 'Poppins';
+    font-family: "Figtree", sans-serif;
     color: #000000;
-    font-weight: 400;
-    font-size: 36px;
+    font-weight: 600;
+    font-size: 38px;
 }
 
 .texts-sobrenos .text-subtitle2-sobrenos{
-    font-family: 'Poppins';
-    color: #797979;
-    font-weight: 400;
-    font-size: 18px;
+    font-family: "Figtree", sans-serif;
+    color: #525A77;
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .container-sobrenos-itens2 .img-foguete{
