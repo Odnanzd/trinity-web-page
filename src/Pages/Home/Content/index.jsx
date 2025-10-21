@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Content.css'
-import vectorpeople from '../../assets/vector-people-work-logo2.svg'
+import vectorpeople from '../../../assets/vector-people-work-logo2.svg'
 
 const Content = () => {
     return (

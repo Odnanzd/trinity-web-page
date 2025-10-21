@@ -1,6 +1,6 @@
 import './SobreNos.css'
-import EngrenaIcon from '../../assets/iconengrenage.svg';
-import FoguteIcon from '../../assets/iconfoguete.svg'
+import EngrenaIcon from '../../../assets/iconengrenage.svg';
+import FoguteIcon from '../../../assets/iconfoguete.svg'
 
 const SobreNos = () => {
     return (

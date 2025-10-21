@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import './Contato.css'
-import iconsucess from '../../assets/success-icon-32px.svg'
+import iconsucess from '../../../assets/success-icon-32px.svg'
 import InputMask from 'react-input-mask';
 
 const Contato = () => {

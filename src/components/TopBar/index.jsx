@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Topbar.css'
 import '../../assets/fonts/fonts.css';
+import { useNavigate } from 'react-router-dom';
 import logotrinity from '../../assets/logo_trinity_topbar.svg'
 import iconsetadown from '../../assets/iconsetadown.svg'
 import iconmenu from '../../assets/menu-icon.svg'
@@ -8,13 +9,19 @@ import iconclose from '../../assets/close-icon.svg'
 
 const Topbar = () => {
 
+    const navigate = useNavigate();
+
     const [menuAberto, setMenuAberto] = useState(false);
+
+    const homeLink = () => {
+        navigate('/');
+      };
 
     return (
 
         <div className="topbar">
             <div className="imglogo">
-                <img src={logotrinity} />
+                <img src={logotrinity} onClick={homeLink} />
             </div>
             <nav>
                 <ul className="menu-list">
