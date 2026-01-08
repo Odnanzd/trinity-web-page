@@ -6,25 +6,25 @@ A aplicação foi construída com tecnologias modernas do ecossistema front-end,
 
 🎯 Objetivo do Projeto
 
-Apresentar a empresa e seus serviços de tecnologia
-
-Fortalecer a presença digital da marca
-
-Oferecer uma interface moderna, responsiva e intuitiva
-
-Servir como ponto de contato para clientes e parceiros
+  - Apresentar a empresa e seus serviços de tecnologia
+  
+  - Fortalecer a presença digital da marca
+  
+  - Oferecer uma interface moderna, responsiva e intuitiva
+  
+  - Servir como ponto de contato para clientes e parceiros
 
 🖥️ Funcionalidades da Landing Page
 
-Seção institucional (sobre a empresa)
-
-Apresentação de serviços e soluções em TI
-
-Destaque para tecnologias e diferenciais
-
-Layout responsivo (desktop, tablet e mobile)
-
-Estrutura otimizada para performance e SEO básico
+  - Seção institucional (sobre a empresa)
+  
+  - Apresentação de serviços e soluções em TI
+  
+  - Destaque para tecnologias e diferenciais
+  
+  - Layout responsivo (desktop, tablet e mobile)
+  
+  - Estrutura otimizada para performance e SEO básico
 
 🚀 Tecnologias Utilizadas
 
