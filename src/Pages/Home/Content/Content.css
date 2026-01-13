@@ -18,10 +18,10 @@
 
 .menu-text-title {
     padding: 0px 40px 0px 40px;
-    font-family: "Sora", serif;
+    font-family: "Figtree", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 36px;
+    font-size: 33px;
     text-align: left;
     color: #407bff;
 }
@@ -33,7 +33,7 @@
 .menu-text-subtitle {
     font-family: "Figtree", sans-serif;
     color: #6b6f7d;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-size: 24px;
     text-align: left;
@@ -70,9 +70,10 @@
     text-decoration: none;
 }
 
-.button-solucao:hover{
+.button-solucao:hover {
     background-color: #3772b6;
 }
+
 .button-faleconosco:hover {
     background-color: #dddddd;
 }
@@ -94,6 +95,42 @@
     cursor: pointer;
     transition: 0.3s ease-in-out;
     text-decoration: none;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #4993f3;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font-family: "Figtree", sans-serif;
+}
+
+.hero-badge-dot {
+    width: 8px;
+    height: 8px;
+    background: #0EA5E9;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
 }
 
 @keyframes slideIn {

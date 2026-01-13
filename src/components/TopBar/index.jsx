@@ -12,14 +12,24 @@ const Topbar = () => {
     const navigate = useNavigate();
 
     const [menuAberto, setMenuAberto] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const homeLink = () => {
         navigate('/');
-      };
+    };
 
     return (
 
-        <div className="topbar">
+        <header className={`topbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="imglogo">
                 <img src={logotrinity} onClick={homeLink} />
             </div>
@@ -30,7 +40,7 @@ const Topbar = () => {
                         <img src={iconsetadown} />
                     </a>
                         <div className="drop">
-                        <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
                                 Inauguração
                             </a>
                         </div>
@@ -66,7 +76,7 @@ const Topbar = () => {
                         <img src={iconsetadown} />
                     </a>
                         <div className="drop-mobile">
-                        <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.instagram.com/p/DF3MKtTP-i7/" target="_blank" rel="noopener noreferrer">
                                 Inauguração
                             </a>
                         </div>
@@ -83,7 +93,7 @@ const Topbar = () => {
                 </ul>
             </nav>
 
-        </div>
+        </header>
 
 
     );

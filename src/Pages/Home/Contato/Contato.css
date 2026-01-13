@@ -1,6 +1,6 @@
 .box-contato {
     display: flex;
-    background-color: #ffffff;
+    background-color: #f9fbfd;
     justify-content: center;
     padding: 50px 0px 50px 0px;
 }
@@ -24,8 +24,8 @@
 
 .contato-text .text-title {
     font-family: "Figtree", sans-serif;
-    font-weight: 500;
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 35px;
     color: #000000;
 }
 
@@ -41,8 +41,8 @@
 .contato-text .text-subtitle {
     padding-top: 10px;
     font-family: "Figtree", sans-serif;
-    color: #797979;
-    font-weight: 500;
+    color: #818181;
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -55,6 +55,7 @@
     align-items: center;
     max-width: 407px;
     flex-direction: column;
+    padding: 10px;
     border-radius: 9px;
     background-color: #ffffff;
     box-shadow: rgba(128, 128, 128, 0.14) 0px 0px 20px;
@@ -87,16 +88,16 @@
 .contato-form .inputtelefone input,
 .contato-form .inputsolucao select,
 .contato-form .inputmensagem textarea {
-    width: 366px;
+    width: 400px;
     height: 40px;
     border-radius: 6px;
     outline: none;
     box-sizing: border-box;
     padding: 8px;
     font-family: "Figtree", sans-serif;
-    font-weight: 600;
-    background-color: #f0f0f0;
-    border: 1px solid rgb(218, 218, 218);
+    font-weight: 500;
+    /* background-color: #f0f0f0; */
+    border: 1px solid #e1e7ef;
 }
 
 .inputcpfcpnj input:focus,
@@ -119,8 +120,8 @@
     border: none;
     cursor: pointer;
     width: 366px;
-    height: 50px;
-    font-size: 16px;
+    height: 40px;
+    font-size: 14px;
     border-radius: 9px;
     font-family: 'Poppins';
     margin: 10px 0px 10px 0px;

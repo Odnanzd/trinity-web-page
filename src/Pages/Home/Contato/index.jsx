@@ -2,6 +2,8 @@ import { React, useState } from 'react';
 import './Contato.css'
 import iconsucess from '../../../assets/success-icon-32px.svg'
 import InputMask from 'react-input-mask';
+import ScrollReveal from "../../../components/Hooks/ScrollReveal";
+import ScrollRevealGroup from "../../../components/Hooks/ScrollRevealGroup";
 
 const Contato = () => {
 
@@ -69,97 +71,110 @@ const Contato = () => {
     return (
         <div id="contato1" className="box-contato">
             <div className="itens-contato-box">
-                <div className="contato-text">
-                    <div className="text-title">
-                        Quer mais <span className="destaque">informações</span> sobre nossos serviços?
-                    </div>
-                    <div className="text-subtitle">
-                        Envie o formulário e marque uma conversa agora com nossos técnicos.
-                    </div>
-                </div>
 
-                <div className="contato-form">
-                    <form onSubmit={onSubmitNewForm} className="form">
-                        <div className="inputsolucao">
-                            <label>Selecione uma opção <span className="destaque2">*</span></label>
-                            <select name="tipo_form"
-                                required
-                                onChange={handleInputChange}
-                                value={contatoForm.tipo_form}
-                            >
-                                <option value="">Selecionar</option>
-                                <option value="Informática">Informática</option>
-                                <option value="Segurança">Segurança Eletrônica</option>
-                                <option value="Sistemas ERP">Sistemas ERP</option>
-                            </select>
-                        </div>
-                        <div className="inputnome">
-                            <label>Nome completo <span className="destaque2">*</span></label>
-                            <input
-                                type="text"
-                                name="nome"
-                                value={contatoForm.nome}
-                                required
-                                onChange={handleInputChange}
-                                placeholder="Digite seu nome" />
-                        </div>
-                        <div className="inputemail">
-                            <label>E-mail <span className="destaque2">*</span></label>
-                            <input
-                                type="email"
-                                name="email"
-                                value={contatoForm.email}
-                                required
-                                onChange={handleInputChange}
-                                placeholder="Digite seu e-mail" />
-                        </div>
-                        <div className="inputtelefone">
-                            <label>Celular <span className="destaque2">*</span></label>
-                            <InputMask
-                                mask="(99) 9 9999-9999"
-                                type="text"
-                                name="telefone"
-                                value={contatoForm.telefone}
-                                required
-                                onChange={handleInputChange}
-                                placeholder="Digite seu telefone" />
-                        </div>
-                        <div className="inputcpfcpnj">
-                            <label>CPF ou CNPJ <span className="destaque2">*</span></label>
-                            <InputMask
-                                mask="999.999.999-99"
-                                type="text"
-                                name="cpf"
-                                value={contatoForm.cpf}
-                                required
-                                onChange={handleInputChange}
-                                placeholder="Digite seu CPF ou CPNJ" />
-                        </div>
-                        <div className="inputmensagem">
-                            <label>Mensagem</label>
-                            <textarea
-                                name="mensagem"
-                                value={contatoForm.mensagem}
-                                placeholder="Digite sua mensagem (opcional)"
-                                onChange={handleInputChange}
-                                rows="5"
-                            ></textarea>
-                        </div>
-                        <input type="hidden" name="_captcha" value="false" />
-
-                        <div className="container-button">
-                            <button type="submit" disabled={loading} className="submit-btn">
-                                {loading ? <span className="spinner"></span> : 'Enviar'}
-                            </button>
-                        </div>
-                        {formEnviado && (
-                            <div className="form-success">
-                                <img src={iconsucess} alt="Sucesso" />
-                                <a>Formulário enviado com sucesso!</a>
+                <ScrollRevealGroup stagger={0.15}>
+                    <div className="contato-text">
+                        <ScrollReveal animation="fade">
+                            <div className="text-title">
+                                Quer mais <span className="destaque">informações</span>?
                             </div>
-                        )}
-                    </form>
-                </div>
+                        </ScrollReveal>
+
+                        <ScrollReveal animation="slide" direction="up">
+                            <div className="text-subtitle">
+                                Envie o formulário e marque uma conversa agora.
+                            </div>
+                        </ScrollReveal>
+                    </div>
+                </ScrollRevealGroup>
+
+
+                <ScrollRevealGroup>
+                    <ScrollReveal animation="slide" direction="up">
+                        <div className="contato-form">
+                            <form onSubmit={onSubmitNewForm} className="form">
+                                <div className="inputsolucao">
+                                    <label>Selecione uma opção <span className="destaque2">*</span></label>
+                                    <select name="tipo_form"
+                                        required
+                                        onChange={handleInputChange}
+                                        value={contatoForm.tipo_form}
+                                    >
+                                        <option value="">Selecionar</option>
+                                        <option value="Informática">Informática</option>
+                                        <option value="Segurança">Segurança Eletrônica</option>
+                                        <option value="Sistemas ERP">Sistemas ERP</option>
+                                    </select>
+                                </div>
+                                <div className="inputnome">
+                                    <label>Nome completo <span className="destaque2">*</span></label>
+                                    <input
+                                        type="text"
+                                        name="nome"
+                                        value={contatoForm.nome}
+                                        required
+                                        onChange={handleInputChange}
+                                        placeholder="Digite seu nome" />
+                                </div>
+                                <div className="inputemail">
+                                    <label>E-mail <span className="destaque2">*</span></label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={contatoForm.email}
+                                        required
+                                        onChange={handleInputChange}
+                                        placeholder="Digite seu e-mail" />
+                                </div>
+                                <div className="inputtelefone">
+                                    <label>Celular <span className="destaque2">*</span></label>
+                                    <InputMask
+                                        mask="(99) 9 9999-9999"
+                                        type="text"
+                                        name="telefone"
+                                        value={contatoForm.telefone}
+                                        required
+                                        onChange={handleInputChange}
+                                        placeholder="Digite seu telefone" />
+                                </div>
+                                <div className="inputcpfcpnj">
+                                    <label>CPF ou CNPJ <span className="destaque2">*</span></label>
+                                    <InputMask
+                                        mask="999.999.999-99"
+                                        type="text"
+                                        name="cpf"
+                                        value={contatoForm.cpf}
+                                        required
+                                        onChange={handleInputChange}
+                                        placeholder="Digite seu CPF ou CPNJ" />
+                                </div>
+                                <div className="inputmensagem">
+                                    <label>Mensagem</label>
+                                    <textarea
+                                        name="mensagem"
+                                        value={contatoForm.mensagem}
+                                        placeholder="Digite sua mensagem (opcional)"
+                                        onChange={handleInputChange}
+                                        rows="5"
+                                    ></textarea>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false" />
+
+                                <div className="container-button">
+                                    <button type="submit" disabled={loading} className="submit-btn">
+                                        {loading ? <span className="spinner"></span> : 'Enviar'}
+                                    </button>
+                                </div>
+                                {formEnviado && (
+                                    <div className="form-success">
+                                        <img src={iconsucess} alt="Sucesso" />
+                                        <a>Formulário enviado com sucesso!</a>
+                                    </div>
+                                )}
+                            </form>
+                        </div>
+                    </ScrollReveal>
+                </ScrollRevealGroup>
             </div>
         </div>
     );

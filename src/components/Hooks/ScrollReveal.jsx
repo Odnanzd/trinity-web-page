@@ -1,37 +1,62 @@
+import { motion } from "framer-motion";
 
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+const ScrollReveal = ({
+  children,
+  animation = "slide",
+  direction = "up",
+  distance = 50,
+  duration = 0.5,
+  transitionType = "tween",
+}) => {
+  const directions = {
+    up: { y: distance },
+    down: { y: -distance },
+    left: { x: distance },
+    right: { x: -distance },
+  };
 
-/**
- * 
- * @param {object} props
- * @param {React.ReactNode} props.children 
- * @param {number} [props.delay=0] 
- */
-const ScrollReveal = ({ children, delay = 0 }) => {
-    const ref = useRef(null);
+  const animations = {
+    fade: {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1 },
+    },
 
-    const isInView = useInView(ref, { once: true, amount: 0.3 }); 
+    slide: {
+      hidden: { opacity: 0, ...directions[direction] },
+      visible: { opacity: 1, x: 0, y: 0 },
+    },
 
-    const variants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0 } 
-    };
+    zoom: {
+      hidden: { opacity: 0, scale: 0.8 },
+      visible: { opacity: 1, scale: 1 },
+    },
 
-    return (
-        <motion.div
-            ref={ref}
-            variants={variants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            transition={{ 
-                duration: 0.5, 
-                delay: delay
-            }}
-        >
-            {children}
-        </motion.div>
-    );
+    rotate: {
+      hidden: { opacity: 0, rotate: -8 },
+      visible: { opacity: 1, rotate: 0 },
+    },
+
+    blur: {
+      hidden: { opacity: 0, filter: "blur(10px)" },
+      visible: { opacity: 1, filter: "blur(0px)" },
+    },
+  };
+
+  return (
+    <motion.div
+      variants={animations[animation]}
+      transition={{
+        type: transitionType,
+        duration,
+        ...(transitionType === "spring" && {
+          stiffness: 120,
+          damping: 20,
+        }),
+      }}
+    >
+      {children}
+    </motion.div>
+  );
 };
 
 export default ScrollReveal;

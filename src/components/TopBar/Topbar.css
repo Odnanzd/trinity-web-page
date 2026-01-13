@@ -1,19 +1,24 @@
 .topbar {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
     height: 75px;
-    width: 100%;
     background-color: #407bff;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
-    z-index: 9999;
+    backdrop-filter: blur(10px);
+    transition: all 300ms ease;
 }
 
-.topbar .imgmenu{
+.topbar.scrolled {
+  box-shadow: 0 4px 6px 5px rgba(0, 0, 0, 0.1), 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.topbar .imgmenu {
     display: none;
 }
 
@@ -22,7 +27,7 @@
     cursor: pointer;
 }
 
-.topbar nav > ul.menu-list{
+.topbar nav>ul.menu-list {
     display: flex;
     list-style-type: none;
 }
@@ -31,7 +36,7 @@
     cursor: pointer;
     height: 75px;
     font-family: "Figtree", sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     color: #f0f0f0;
     display: flex;
@@ -41,16 +46,18 @@
     padding: 0px 15px 0px 15px;
 }
 
-.topbar nav ul li a:hover{
+.topbar nav ul li a:hover {
     background-color: #c2c3c4;
     color: #407bff;
 }
 
-.drop-hover-nov, .drop-hover-cliente{
+.drop-hover-nov,
+.drop-hover-cliente {
     position: relative;
 }
 
-.drop-hover-nov .drop, .drop-hover-cliente .drop{
+.drop-hover-nov .drop,
+.drop-hover-cliente .drop {
     position: absolute;
     background-color: #c2c3c4;
     width: 100%;
@@ -59,17 +66,20 @@
     transition: .5s;
 }
 
-.drop-hover-nov:hover .drop, .drop-hover-cliente:hover .drop{
+.drop-hover-nov:hover .drop,
+.drop-hover-cliente:hover .drop {
     height: 75px;
     background-color: #407bff;
 }
 
 
-.drop-hover-nov-mobile, .drop-hover-cliente-mobile{
+.drop-hover-nov-mobile,
+.drop-hover-cliente-mobile {
     position: relative;
 }
 
-.drop-hover-nov-mobile .drop-mobile, .drop-hover-cliente-mobile .drop-mobile{
+.drop-hover-nov-mobile .drop-mobile,
+.drop-hover-cliente-mobile .drop-mobile {
     position: absolute;
     background-color: #c2c3c4;
     width: 100%;
@@ -78,20 +88,21 @@
     transition: .5s;
 }
 
-.drop-hover-nov-mobile:hover .drop-mobile, .drop-hover-cliente-mobile:hover .drop-mobile{
+.drop-hover-nov-mobile:hover .drop-mobile,
+.drop-hover-cliente-mobile:hover .drop-mobile {
     height: 80px;
     right: 0px;
     background-color: #c0c0c0;
     z-index: 9999;
 }
 
-.menu-list .menu-itens{
+.menu-list .menu-itens {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sidebar-mobile{
+.sidebar-mobile {
     position: fixed;
     top: 0;
     right: 0;
@@ -109,11 +120,11 @@
     justify-content: flex-start;
 }
 
-.sidebar-mobile li{
+.sidebar-mobile li {
     width: 100%;
 }
 
-.sidebar-mobile a{
+.sidebar-mobile a {
     width: 100%;
     justify-content: left !important;
 }
@@ -123,11 +134,15 @@
 }
 
 @media (max-width: 1120px) {
-    .topbar .imgmenu{
+    .topbar .imgmenu {
         display: flex;
     }
 
-    .topbar .solucaobutton, .topbar .drop-hover-nov, .topbar .trinitybutton, .topbar .drop-hover-cliente, .topbar .contatobutton{
+    .topbar .solucaobutton,
+    .topbar .drop-hover-nov,
+    .topbar .trinitybutton,
+    .topbar .drop-hover-cliente,
+    .topbar .contatobutton {
         display: none;
     }
 
