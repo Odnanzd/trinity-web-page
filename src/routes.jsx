@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "./Pages/Home";
 import Portifolio from "./Pages/Portifolio";
@@ -15,7 +15,9 @@ const App = () => {
                 <Route index element={<Home />} />
 
                 <Route path="projetos" element={<Portifolio />} />
-    
+
+                <Route path="*" element={<Navigate to="/" />} />
+
             </Route>
 
         </Routes>

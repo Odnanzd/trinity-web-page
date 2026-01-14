@@ -6,6 +6,7 @@ import LogoClaro from '../../../assets/logo-claro.png'
 import LogoSindler from '../../../assets/logo-sindler.png'
 import ScrollReveal from "../../../components/Hooks/ScrollReveal";
 import ScrollRevealGroup from "../../../components/Hooks/ScrollRevealGroup";
+import { useCallback, useEffect, useState } from "react";
 import './Clientes.css'
 
 const clients = [
@@ -16,13 +17,30 @@ const clients = [
   { id: 5, name: 'Sindler', logo: LogoSindler }
 ];
 
+
 const ClienteCarrossel = () => {
-  const [emblaRef] = useEmblaCarousel({
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     dragFree: true,
     containScroll: "trimSnaps",
     align: "start",
   });
+
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
+
+  const updateScrollState = useCallback(() => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    updateScrollState();
+    emblaApi.on("select", updateScrollState);
+    emblaApi.on("reInit", updateScrollState);
+  }, [emblaApi, updateScrollState]);
 
   return (
     <section className="clients-section">
@@ -41,7 +59,7 @@ const ClienteCarrossel = () => {
 
             <ScrollReveal animation="slide" direction="up">
               <p className="section-subtitle-clients">
-                Empresas que confiam em nosso trabalho
+                Principais empresas que confiam em nosso trabalho
               </p>
             </ScrollReveal>
           </div>
@@ -51,6 +69,28 @@ const ClienteCarrossel = () => {
         <ScrollRevealGroup>
           <ScrollReveal animation="slide" direction="up">
             <div className="clients-carousel">
+              {canScrollPrev && <div className="carousel-blur left" />}
+
+              {canScrollNext && <div className="carousel-blur right" />}
+
+              {canScrollPrev && (
+                <button
+                  className="carousel-arrow left"
+                  onClick={() => emblaApi.scrollPrev()}
+                >
+                  ‹
+                </button>
+              )}
+
+              {canScrollNext && (
+                <button
+                  className="carousel-arrow right"
+                  onClick={() => emblaApi.scrollNext()}
+                >
+                  ›
+                </button>
+              )}
+
               <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                   {clients.map((client, index) => (

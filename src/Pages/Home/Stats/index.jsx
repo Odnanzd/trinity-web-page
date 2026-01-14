@@ -6,7 +6,7 @@ import ScrollRevealGroup from '../../../components/Hooks/ScrollRevealGroup'
 const stats = [
   { number: '50+', label: 'Projetos Entregues' },
   { number: '40+', label: 'Clientes Satisfeitos' },
-  { number: '5', label: 'Anos de Experiência' },
+  { number: '2', label: 'Anos de Experiência' },
   { number: '100%', label: 'Satisfação' },
 ];
 
